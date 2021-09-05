@@ -1,8 +1,19 @@
 import React, { useState } from 'react'
-import { Card, Input } from 'antd'
+import { Card, Input, Button } from 'antd'
 import 'antd/dist/antd.css'
 import data from '../data/data'
 import Item from 'antd/lib/list/Item'
+import './Hero.css'
+import { SearchOutlined } from '@ant-design/icons'
+
+const suffix = (
+  <SearchOutlined
+    style={{
+      fontSize: 16,
+      color: '#1890ff',
+    }}
+  />
+)
 
 const Search = () => {
   const { Meta } = Card
@@ -23,11 +34,13 @@ const Search = () => {
       <div className='row justify-content-center'>
         <div className='col-12 mb-5'>
           <div className='mb-3 col-4 mx-auto'>
-            <label className='form-label h4'>Search Models</label>
             <Input
+              id='lumoz-searchBox'
+              size='large'
               type='text'
-              placeholder='Basic usage'
+              placeholder='Search Models here'
               value={filter}
+              suffix={suffix}
               onChange={searchText.bind(this)}
             />
           </div>
