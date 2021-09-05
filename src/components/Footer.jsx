@@ -1,11 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import Logo from '../assets/logo.png'
-import {
-  FacebookOutlined,
-  TwitterOutlined,
-  InstagramOutlined,
-} from '@ant-design/icons'
 
 function Footer() {
   return (
@@ -31,13 +26,13 @@ function Footer() {
                   <div class='footer-social-icon'>
                     <span>Follow us</span>
                     <a href='#'>
-                      <i class='fab fa-facebook-f facebook-bg'>Facebook</i>
+                      <i class='fab fa-facebook-f facebook-bg'></i>
                     </a>
                     <a href='#'>
-                      <i class='fab fa-twitter twitter-bg'>Twitter</i>
+                      <i class='fab fa-twitter twitter-bg'></i>
                     </a>
                     <a href='#'>
-                      <i class='fab fa-google-plus-g google-bg'>Linkedin</i>
+                      <i class='fab fa-google-plus-g google-bg'></i>
                     </a>
                   </div>
                 </div>

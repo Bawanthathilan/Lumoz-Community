@@ -36,7 +36,7 @@ section {
   margin-top: 0.2em;
 }
 .left-col .primary-cta {
-  background: #007af3;
+  background: linear-gradient(#419fdd, #a966e5);
   color: white;
   text-decoration: none;
   padding: 0.6em 1.3em;
