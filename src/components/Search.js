@@ -4,7 +4,7 @@ import 'antd/dist/antd.css'
 import data from '../data/data'
 import Item from 'antd/lib/list/Item'
 import './Hero.css'
-import { SearchOutlined } from '@ant-design/icons'
+import { SearchOutlined, DownloadOutlined } from '@ant-design/icons'
 
 const suffix = (
   <SearchOutlined
@@ -55,6 +55,15 @@ const Search = () => {
                 cover={<img alt='example' src={Item.img} />}
               >
                 <Meta title={Item.title} description={Item.description} />
+                <Button
+                  id='lumoz-download-btn'
+                  type='primary'
+                  href={Item.img}
+                  shape='round'
+                  icon={<DownloadOutlined />}
+                >
+                  Download Model
+                </Button>
               </Card>
             </div>
           )

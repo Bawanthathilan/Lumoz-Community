@@ -10,6 +10,9 @@ a {
 .lumoz-logo {
   margin-left: 10px;
 }
+#lumoz-download-btn {
+  margin-top: 12px;
+}
 ul {
   list-style-type: none;
   margin: 0;
