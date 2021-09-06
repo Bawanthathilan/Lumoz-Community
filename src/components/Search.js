@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Card, Input, Button } from 'antd'
+import { Card, Input, Button, Row } from 'antd'
 import 'antd/dist/antd.css'
 import data from '../data/data'
 import Item from 'antd/lib/list/Item'
 import './Hero.css'
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons'
+import Feature from './Feature'
 
 const suffix = (
   <SearchOutlined
@@ -45,13 +46,14 @@ const Search = () => {
             />
           </div>
         </div>
+        <Feature />
 
         {modelSearch.map((Item, index) => {
           return (
-            <div className='col-11 col-md-6 col-lg-3 mx-0 mb-4'>
+            <div className='col-11 col-md-6 col-lg-3 mx-0 mb-4  '>
               <Card
                 hoverable
-                style={{ width: 240 }}
+                style={{ width: 250 }}
                 cover={<img alt='example' src={Item.img} />}
               >
                 <Meta title={Item.title} description={Item.description} />

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import Logo from '../assets/logo-light.png'
+import Feature from './Feature'
 
 function Hero() {
   return (

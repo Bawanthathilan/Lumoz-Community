@@ -38,7 +38,7 @@ const data = {
       id: 5,
       img: Image,
       Model: Buggy,
-      title: 'Car',
+      title: 'Buggy Car',
       description: 'Author@Lumoz',
     },
     {

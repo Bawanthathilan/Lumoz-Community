@@ -32,7 +32,10 @@ function Footer() {
                       <i class='fab fa-twitter twitter-bg'></i>
                     </a>
                     <a href='#'>
-                      <i class='fab fa-google-plus-g google-bg'></i>
+                      <i class='fab fa-youtube google-bg'></i>
+                    </a>
+                    <a href='#'>
+                      <i class='fab fa-instagram google-bg'></i>
                     </a>
                   </div>
                 </div>

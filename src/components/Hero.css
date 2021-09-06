@@ -23,7 +23,9 @@ section {
 }
 .hero {
   text-align: center;
+  background-color: #eeeeee;
 }
+
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
@@ -57,7 +59,93 @@ section {
   width: 70%;
   margin-top: 3em;
 }
-section.features-section {
-  background: #20272e;
-  color: white;
+
+.features-grid {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.features-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 20px 0 #00000033;
+}
+
+@media (min-width: 900px) {
+  .features-card {
+    margin: 0;
+  }
+}
+
+.features-icon {
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@media (min-width: 700px) {
+  .features-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 700px) {
+  .features-icon i {
+    font-size: 1.25rem;
+  }
+}
+
+.features-icon.audio {
+}
+
+.features-icon.badge {
+  background-color: #6c63ff;
+}
+
+.features-icon.card {
+  background-color: #00bfa6;
+}
+
+.features-icon.fire {
+  background-color: #f9a826;
+}
+
+.features-text h2 {
+  font-size: 1rem;
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+@media (min-width: 700px) {
+  .features-text h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+}
+
+.features-text p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 700px) {
+  font-size: 1rem;
 }
