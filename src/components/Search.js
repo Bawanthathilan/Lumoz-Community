@@ -58,25 +58,7 @@ const Search = () => {
           </div>
         </div>
         <Feature />
-        {filter ? (
-          <section class='fdb-block'>
-            <div class='container'>
-              <div class='row'>
-                <div class='col text-center'>
-                  <h1>Oops :(</h1>
-                  <p class='lead'>Model Not Found</p>
-                </div>
-              </div>
-              <div class='row justify-content-center'>
-                <div class='col-6'>
-                  <img alt='image' class='img-fluid mt-5' src={NotFound} />
-                </div>
-              </div>
-            </div>
-          </section>
-        ) : (
-          <></>
-        )}
+
         {modelSearch.map((Item, index) => {
           return (
             <div className='col-11 col-md-6 col-lg-3 mx-0 mb-4  '>
