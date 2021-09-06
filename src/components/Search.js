@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card, Input, Button, Row } from 'antd'
+import { Card, Input, Button, notification } from 'antd'
 import 'antd/dist/antd.css'
 import data from '../data/data'
 import Item from 'antd/lib/list/Item'
@@ -15,10 +15,19 @@ const suffix = (
     }}
   />
 )
-
+const openNotification = () => {
+  notification.open({
+    message: 'Your Download is Ready',
+    description: 'Click Allow to Download your model file',
+    onClick: () => {
+      console.log('Notification Clicked!')
+    },
+  })
+}
 const Search = () => {
   const { Meta } = Card
   const [filter, setFilter] = useState('')
+
   const searchText = (event) => {
     setFilter(event.target.value)
   }
@@ -30,6 +39,7 @@ const Search = () => {
         .includes(filter.toString().toLowerCase())
     )
   })
+
   return (
     <section className='py-4 container'>
       <div className='row justify-content-center'>
@@ -62,6 +72,7 @@ const Search = () => {
                   type='primary'
                   href={Item.Model}
                   shape='round'
+                  onClick={openNotification}
                   icon={<DownloadOutlined />}
                 >
                   Download Model

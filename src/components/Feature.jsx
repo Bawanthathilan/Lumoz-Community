@@ -8,7 +8,7 @@ function Feature() {
     <div>
       <div class='col-12 mt-3 mb-1'>
         <h4 class='text-uppercase'>Minimal Steps</h4>
-        <p>Models - OBJ , GLTF</p>
+        <p>Supported Model Types - OBJ , GLTF</p>
       </div>
 
       <div class='col-12 mt-3 mb-1 mb-4'>
