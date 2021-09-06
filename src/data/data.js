@@ -1,53 +1,65 @@
 import Image from '../assets/banner.png'
+import Buggy from '../assets/models/Buggytest.gltf'
+import Zoo from '../assets/models/Zoo.gltf'
+import Suzanne from '../assets/models/suzanne.gltf'
+import Duck from '../assets/models/rubber-duck.glb'
 
 const data = {
   cardData: [
     {
       id: 1,
       img: Image,
-      title: 'Sample1',
+      Model: Buggy,
+      title: 'Buggy',
       description: 'Author@Lumoz',
     },
     {
       id: 2,
       img: Image,
-      title: 'Sample2',
+      Model: Zoo,
+      title: 'Zoo',
       description: 'Author@Lumoz',
     },
     {
       id: 3,
       img: Image,
-      title: 'Sample3',
+      Model: Suzanne,
+      title: 'Suzanne',
       description: 'Author@Lumoz',
     },
     {
       id: 4,
       img: Image,
-      title: 'Sample4',
+      Model: Duck,
+      title: 'Duck',
       description: 'Author@Lumoz',
     },
     {
       id: 5,
       img: Image,
-      title: 'Sample5',
+      Model: Buggy,
+      title: 'Car',
       description: 'Author@Lumoz',
     },
     {
       id: 6,
       img: Image,
+      Model: Duck,
       title: 'Lumoz5',
       description: 'Author@Lumoz',
     },
     {
       id: 7,
       img: Image,
-      title: 'Lumoz5',
+      Model: Zoo,
+      title: 'Zoov1',
       description: 'Author@Lumoz',
     },
     {
       id: 8,
       img: Image,
-      title: 'Lumoz5',
+      Model: Duck,
+      title: 'Animals',
       description: 'Author@Lumoz',
     },
   ],

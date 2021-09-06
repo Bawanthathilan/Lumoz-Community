@@ -58,7 +58,7 @@ const Search = () => {
                 <Button
                   id='lumoz-download-btn'
                   type='primary'
-                  href={Item.img}
+                  href={Item.Model}
                   shape='round'
                   icon={<DownloadOutlined />}
                 >
